@@ -12,7 +12,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-	  host : 'jdbc:postgresql://dpg-ck1bgapgbqfc73ev2j40-a/facerecognition_fh4s',
+	  host : 'jdbc:postgresql://dpg-ck1bgapgbqfc73ev2j40-a.frankfurt-postgres.render.com/facerecognition_fh4s',
 	  port : 5432,
 	  user : 'razvan',
 	  password : 'uoco2K8yYCyqLeGzB2tQdh0Fr2BsHNOQ',

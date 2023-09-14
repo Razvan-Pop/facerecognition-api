@@ -12,10 +12,10 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-	  host : 'dpg-ck1bgapgbqfc73ev2j40-a',
+	  host : process.env.DATABASE_HOST,
 	  port : 5432,
 	  user : 'razvan',
-	  password : 'uoco2K8yYCyqLeGzB2tQdh0Fr2BsHNOQ',
+	  password : process.env.DATABASE_PASSWORD,
 	  database : 'facerecognition_fh4s'
   }
 });

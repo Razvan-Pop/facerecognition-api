@@ -1,6 +1,6 @@
 const clarifai = require('clarifai');
 
-const PAT = '758588adcb614ff09790838253d28884';
+const PAT = process.env.CLARIFAI_PAT;
 const USER_ID = 'clarifai';       
 const APP_ID = 'main';
 const MODEL_ID = 'face-detection';

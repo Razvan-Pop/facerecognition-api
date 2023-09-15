@@ -32,11 +32,12 @@ const handleApiCall = (req, res) => {
 	    },
 	    body: raw
 	};
-
+	console.log('h1');
 	fetch("https://api.clarifai.com/v2/models/" + MODEL_ID + "/versions/" + MODEL_VERSION_ID + "/outputs", requestOptions)
     .then(response => response.json())
     .then(result => res.json(result))
     .catch(error => res.status(400).json('unable to work with api'));
+  console.log('h2');
 }
 
 const handleImage = (req, res, db) => {
